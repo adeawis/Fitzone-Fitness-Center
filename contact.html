@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
+        <title>FitZone Fitness Center</title>
+        <link rel="stylesheet" href="css/CSS.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+            </style>
+        <script src="https://kit.fontawesome.com/70d0595457.js" crossorigin="anonymous"></script>
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    </head>
+    <body>
+        <section class="subheader">
+            <nav>
+            <a href="#" class="logo">
+                <img src="images1/Logo1.png" alt="Fitness Center Logo">
+            </a>
+            <div class="navbar">
+                <a href="Home.html">HOME</a>
+                <a href="Services.html">SERVICES</a>
+                <a href="blog.html">BLOG</a>
+                <a href="About.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="">|</a>
+                <a href="sign-in.html">LOGIN</a>
+            </div>
+            </nav>
+            <h1>CONTACT US</h1>
+
+        </section>
+
+            <section class="gym-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63293.76060107663!2d80.31658053233599!3d7.480703540419832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3398ab06be8b9%3A0x1f90e4e71e885052!2sKurunegala!5e0!3m2!1sen!2slk!4v1729156995134!5m2!1sen!2slk" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section class="contact-us" id="query-sec">
+                <div class="Row">
+                    <div class="contact-col">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>FFC, 12B, Main Street</h5>
+                                <p>Kurunegala, Sri Lanka</p>
+                            </span>
+                            </div>
+                            <div>
+                            <i class="fa fa-phone"></i>
+                            
+                            <span>
+                                <h5>+94 123 456 789</h5>
+                                <h5>+94 789 456 123</h5>
+                            
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope-o"></i>
+                            <span>
+                                <h5>fitzonecontact-us@gmail.com</h5>
+                                <p>Email us</p>
+                            </span>
+                        </div>
+                        </div>
+
+                        <div class="contact-col">
+
+                            <h3>For Queries</h3>
+                        
+                            <form class="query-form" action="queriesSubmit.php" method="post">
+                                <input type="text" name="name" placeholder="Enter Name">
+                                <input type="email" name="email"placeholder="Enter Email">
+                                <textarea rows="6" name="query"   placeholder="Type Query" required></textarea>
+                                <button type="Submit" class="reg-btn">Submit</button>
+                            </form>
+                        
+                        </div>
+                        
+                        </div>
+           </section>
+
+           <section class="appointments" id="apts">
+                    <h3>Make An Appointment Now</h3>
+                    <p>Open Hours: Monday to Saturday From 7AM - 9PM | Sunday From 7AM - 3PM</p>
+ 
+           </section>
+
+           
+
+           <section class="apt">
+            <div class="apt-form">
+                <form class="form-aptForm" action="SubmitAppointment.php" method="POST">
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                
+                    <label for="trainer">Choose a Trainer (Optional):</label>
+                    <select id="trainer" name="trainer">
+                      <option value="">Select Trainer</option>
+                      <option value="trainer1">Trainer 1</option>
+                      <option value="trainer2">Trainer 2</option>
+                      <option value="trainer3">Trainer 3</option>
+                    </select>
+                
+                    <label for="message">Special Requests or Comments:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special requests or comments?"></textarea>
+                
+                    <button type="submit" class="apt-btn">Submit Appointment</button>
+                  </form>
+                
+            </div>
+            </section>
+
+
+
+<!-----------------------    footer page        ------------------->
+        <section class="end-page">
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>CUSTOMER SERVICE</h4>
+                            <ul>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="sign-in.html">Account Login</a></li>
+                                <li><a href="">Track Your Order</a></li>
+                                <li><a href="">Returns & Exchanges</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>GET HELP</h4>
+                            <ul>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Payment Options</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>ABOUT</h4>
+                            <ul>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="">Rewards Program</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>FOLLOW US ON</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                
+                            </div>      
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>

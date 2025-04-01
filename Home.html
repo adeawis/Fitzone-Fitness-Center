@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
+        <title>FitZone Fitness Center</title>
+        <!-- css file connecter-->
+        <link rel="stylesheet" href="css/CSS.css">
+
+        <!-- fonts connecter-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+            </style>
+
+            <!-- fontawesome icons connecter-->
+        <script src="https://kit.fontawesome.com/70d0595457.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <!-- Home page-->
+        <section class="Mainheader" id="register-col">
+            <nav>
+            <a href="#" class="logo">
+                <img src="images1/Logo1.png" alt="Fitness Center Logo">
+            </a>
+            <div class="navbar">
+                <a href="Home.html">HOME</a>
+                <a href="Services.html">SERVICES</a>
+                <a href="blog.html">BLOG</a>
+                <a href="About.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="">|</a>
+                <a href="sign-in.html">LOGIN</a>
+                <a href="">|</a>
+                <button class="search-icon" id="searchBtn">SEACH<i class="fa fa-search"></i></button>
+            </div>
+            </nav>
+
+            <div id="searchModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form   id="searchForm">
+                  <input type="text" name="q"    id="searchInput"  placeholder="Search for fitness, wellbeing or gym services...">
+                  <button type="submit" id="submit"><i class="fa fa-search"></i> Search</button>
+                </form>
+                </div>
+              </div>
+
+              <!----- JS code for the search option ------------>
+              <script>
+                var form = document.getElementById("searchForm");
+                var searchInput = document.getElementById("searchInput");
+
+                // Handle the search form submission
+                form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+                var searchTerm = searchInput.value.toLowerCase(); // Get the search term and convert to lowercase for consistency
+
+                // Check the search term and redirect accordingly
+                if (searchTerm === "fitness" || searchTerm === "services") {
+                window.location.href = 'Services.html'; // Redirect to Services.html
+                } else if (searchTerm === "wellbeing") {
+                window.location.href = 'blog.html'; // Redirect to Blog.html
+                } else {
+                alert("No matching page found for: " + searchTerm);
+                }
+
+                // Optionally, close the modal after the search
+                modal.style.display = "block";
+                });
+              </script>
+
+
+
+            <!-- home page heading-->
+            <div class="heading" >
+                <h1>Welcome to <br>Fitzone Fitness Center</h1>
+                <p> 
+                Where your health and wellness are our 
+                top priority! <br>Join our growing community, and let’s work 
+                together to build a healthier, stronger you!</p>
+                <a href="sign-up.html" class="register-btn">REGISTER NOW</a>
+            </div>
+        </section>
+
+        <!-- membership categories-->
+        <section class="membership">
+            <div class="pricing-table">
+                <div class="details">
+                    <h1>Membership Plans</h1>
+                    <p>We have 3 membership plannings for your suitablity.
+                        Check them out now and start your fitness life.
+                    </p>
+                </div>
+                <div class="grid">
+                    <div class="box">
+                        <div class="title">Basic</div>
+                        <div class="prices">
+                            <b>Rs.750.00</b>
+                            <span>Per week</span>
+                        </div>
+                        <div class="features">
+                            <div>Unlimited access to the gym</div>
+                            <div>Access to locker rooms</div>
+                            <div>Full use of cardio machines</div>
+                        </div>
+                        <div class="button-basic">
+                            <a href="Services.html#info-banner">Sign-Up Now</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="title">Professional</div>
+                        <div class="prices">
+                            <b>Rs.2000.00</b>
+                            <span>Per Month</span>
+                        </div>
+                        <div class="features">
+                            <div>Unlimited access to the gym</div>
+                            <div>Access to locker rooms</div>
+                            <div> Full use of cardio machines</div>
+                            <div>Discounts on personal training packages <br>and special gym events.</div>
+
+                        </div>
+                        <div class="button-pro">
+                            <a href="Services.html#info-banner">Sign-Up Now</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="title">Group Sessions</div>
+                        <div class="prices">
+                            <b>Rs.2500.00</b>
+                            <span>Per Month</span>
+                        </div>
+                        <div class="features">
+                            <div>Unlimited access to the gym</div>
+                            <div>Access to locker rooms</div>
+                            <div>Access to select group classes</div>
+                            <div> Full use of cardio machines</div>
+                            <div>Discounts on personal training packages <br>and special gym events.</div>
+
+                        </div>
+                        <div class="button">
+                            <a href="Services.html#info-banner">Sign-Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------- promotion banner ------------->
+        <section class="pro-banner">
+
+                  <h1>GET IT NOW!</h1>
+                  <p>Join our gym today and get 50% off your first month!</p>
+                  <a href="Home.html#register-col" class="pro-banner-btn">Sign-Up Now</a>
+
+        </section>
+
+        
+
+
+
+<!-- Footer -->
+
+        <section class="end-page">
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>CUSTOMER SERVICE</h4>
+                            <ul>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="sign-in.html">Account Login</a></li>
+                                <li><a href="">Track Your Order</a></li>
+                                <li><a href="">Returns & Exchanges</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>GET HELP</h4>
+                            <ul>
+                                <li><a href="contact.html#query-sec">FAQ</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Payment Options</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>ABOUT</h4>
+                            <ul>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="">Rewards Program</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>FOLLOW US ON</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                
+                            </div>      
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <script src="js/search.js"></script>
+    </body>
+</html>

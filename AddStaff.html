@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
+        <title>FitZone Fitness Center</title>
+        <!-- css file connecter-->
+        <link rel="stylesheet" href="adminCSS/adminCSS.css">
+
+        <!-- fonts connecter-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+            </style>
+
+            <!-- fontawesome icons connecter-->
+        <script src="https://kit.fontawesome.com/70d0595457.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+
+            <!-- sign-in form-->
+             
+            <div class="addStaff-col">
+                
+                <a href="adminHomepg.php" class="close-btn">&times;</a>
+                <h3>Add Staff Members</h3>
+                <form class="adding-form" action="staffReg.php" method="post">
+                    <input type="number" name="id" placeholder="Enter ID" required>
+                    <input type="text" name="name" placeholder="Enter Name" required>
+                    <input type="email" name="email" placeholder="Enter Email">
+                    <input type="text" name="usernameStaff" placeholder="Enter Username" required>
+                    <input type="password" name="passwordStaff" placeholder="Enter Password" required>
+                    <input type="text" name="address" placeholder="Address" required>
+                    <input type="number" name="phone_num" placeholder="Phone Number" required>
+                    <select name="position" id="position" required>
+                        <option value="-">Select Post</option>
+                        <option value="Gym trainer">Gym Trainer</option>
+                        <option value="Yoga coach">Yoga Coach</option>
+                        <option value="Assistant">Assistant</option>
+                        <option value="Cleaner">Cleaner</option>
+                    </select>
+                    <button type="submit" class="add-btn">Add</button>
+                    
+
+                </form>
+            </div>
+        
+
+       
+    </body>
+</html>

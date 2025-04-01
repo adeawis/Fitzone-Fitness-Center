@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: rgb(219, 219, 219);
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    background: white;
+}
+.logo{
+    align-items: center;
+    display: flex;
+}
+.logo a{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 2rem 8rem 2rem 2rem;
+}
+.search-box{
+    align-items: center;
+    display: flex;
+}
+.search-box input{
+    padding: 6px;
+    width: 250px;
+    background: rgb(228, 228, 228);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-box i{
+    cursor: pointer;
+    padding: 0.65rem;
+    color: #fff;
+    background: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.header-icons{
+    align-items: center;
+    display: flex;
+}
+.header-icons i{
+    cursor: pointer;
+    margin-right: 2rem;
+}
+.header-icons .account{
+    display: flex;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-icons .account img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/*-------- side panel ----------*/
+nav{
+    background: white;
+}
+.side-navbar{
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.side-navbar span{
+    margin: 1rem 3rem;
+    color: gray;
+    font-size: 12px;
+}
+.side-navbar a{
+    width: 100%;
+    padding: 0.8rem 3rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+}
+.links{
+    margin-top: 13rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    font-size: 13px;
+}
+.side-navbar a:hover{
+    background: rgb(235, 235, 235);
+}
+.side-navbar .active{
+    border-left: 2px solid rgb(100, 100, 100);
+}
+
+/*------- main display place --------*/
+.main-body{
+    width: 80%;
+    padding: 0.7rem;
+}
+.display{
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 0.5rem 1rem 1rem 2.7rem;
+    background: rgb(37, 37, 37);
+}
+.display h1, span{
+    margin: 10px;
+}
+
+/*------ tables look -------*/
+.display-tbl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.4rem 0;
+}
+.row h4{
+    font-size: 25px;
+}
+.row a:hover{
+    text-decoration: underline;
+}
+table{
+    background: white;
+    padding: 18px;
+    text-align: left;
+    border-collapse: collapse;
+}
+table td, th{
+    padding: 18px;
+    border: 1px solid rgb(37, 37, 37);
+}
+table th{
+    font-size: 15px;
+    text-align: center;
+}
+table td{
+    font-size: 13px;
+    color: rgb(100, 100, 100);
+}
+table td .update-btn{
+    color: white;
+    background: green;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 18px;
+}
+table td .delete-btn{
+    color: white;
+    background: red;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 18px;
+}
+
+/*--------- adding staff ---------*/
+.addStaff-col{
+    width: 90%;
+    max-width: 620px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 45px 45px 70px;
+    position: absolute;
+    background: rgb(100, 100, 100);
+    border-radius: 8px;
+    transform: translate(-50%,-50%);
+    
+}
+.addStaff-col h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.adding-form input{
+    padding: 15px;
+    margin-bottom: 17px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    background: #f0f0f0;
+    border: 1px solid #CCC;
+    justify-content: center;
+}
+.adding-form select{
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    background: #f0f0f0;
+    border: 1px solid #CCC;
+    justify-content: center;
+}
+.add-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 58px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    justify-content: center;
+}
+.add-btn:hover{
+    color: white;
+    background: #24262b;
+    border: 2px solid #24262b;
+    transition: 0.5s;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    background: white;
+    color: black;
+    text-align: center;
+    line-height: 19px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.close-btn:hover{
+    background: #f0f0f0;
+}
+
+/*------- staff update page ----------*/
+.update-col{
+    width: 90%;
+    max-width: 620px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 45px 45px 70px;
+    position: absolute;
+    background: rgb(100, 100, 100);
+    border-radius: 8px;
+    transform: translate(-50%,-50%);
+}
+.update-col h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.update-col label{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    text-align: left;
+    margin-right: 90%;
+}
+.update-form input{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    background: #f0f0f0;
+    border: 1px solid #CCC;
+    justify-content: center;
+}
+.update-form select{
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    background: #f0f0f0;
+    border: 1px solid #CCC;
+    justify-content: center;
+}
+.updateBTN{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 80px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    justify-content: center;
+}
+.updateBTN:hover{
+    color: white;
+    background: #24262b;
+    border: 2px solid #24262b;
+    transition: 0.5s;
+}
+
+/*-------- staff respond queries --------*/
+.respond-form input{
+    padding: 15px;
+    margin-bottom: 17px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    background: #f0f0f0;
+    border: 1px solid #CCC;
+    justify-content: center;
+}
+.respond-form label{
+    margin-bottom: 5px;
+    width: 100%;
+}
+textarea{
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
